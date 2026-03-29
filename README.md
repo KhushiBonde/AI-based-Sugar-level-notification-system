@@ -1,4 +1,4 @@
-# 🩺 AI Based Sugar Level Notification System
+#  AI Based Sugar Level Notification System
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![Scikit-learn](https://img.shields.io/badge/ML-Scikit--learn-orange.svg)
@@ -7,23 +7,23 @@
 
 ---
 
-## 👤 Author(s)
+## Profile
 
 ```
-Author(s): [Your Name]
-Affiliation: [Your University / Organization]
-Date: [Month Year]
+Author(s): [Khushi Bonde]
+Affiliation: [Suryodaya College Of Engineering and Techonoglogy]
+
 ```
 
 ---
 
-## 📄 Abstract
+## Abstract
 
 This project presents an AI-based Sugar Level Notification System designed to predict and monitor blood glucose levels in patients using machine learning. The system takes patient health parameters such as glucose concentration, BMI, age, insulin levels, and blood pressure as input and classifies whether the sugar level is Normal, High (Hyperglycemia), or Low (Hypoglycemia). A Logistic Regression and Random Forest classifier is trained on the Pima Indians Diabetes Dataset. When the system detects abnormal glucose levels, it immediately triggers a notification alert to inform the user. The model achieves approximately 78–82% accuracy on the test set. This solution is particularly useful for early-stage diabetes detection and continuous health monitoring without requiring expensive medical equipment. The project is built using Python, Scikit-learn, Pandas, and NumPy, making it accessible for beginner AI/ML students and healthcare startups alike.
 
 ---
 
-## 1. 📖 Introduction
+## 1.  Introduction
 
 Diabetes is one of the most prevalent chronic diseases worldwide, affecting over 422 million people globally (WHO, 2023). Uncontrolled blood sugar levels — both high (hyperglycemia) and low (hypoglycemia) — can cause severe health complications including kidney failure, blindness, nerve damage, and cardiovascular disease. Early detection and continuous monitoring of sugar levels is critical to preventing these outcomes.
 
@@ -37,7 +37,7 @@ Traditional monitoring methods require frequent manual blood tests, which are in
 
 ---
 
-## 2. 📚 Literature Review
+## 2.  Literature Review
 
 Several researchers have explored ML-based diabetes prediction systems:
 
@@ -50,13 +50,13 @@ Existing solutions often require complex hardware (CGM devices) or large dataset
 
 ---
 
-## 3. ⚙️ Methodology
+## 3.  Methodology
 
 The system collects patient health data (glucose, BMI, age, insulin, blood pressure, skin thickness, pregnancies, diabetes pedigree function) from a CSV input or manual entry. The data is preprocessed — missing values replaced with column means, features normalized using StandardScaler. A Random Forest Classifier is trained on 80% of the Pima Indians Diabetes Dataset and validated on the remaining 20%. Once the model predicts the sugar level class, a threshold-based rule engine determines whether a notification should be triggered. The notification module uses Python's `smtplib` for email alerts or `plyer` library for desktop pop-up notifications. The pipeline is: Data Input → Preprocessing → Model Prediction → Threshold Check → Notification.
 
 ---
 
-## 4. 💻 Implementation
+## 4.  Implementation
 
 **Programming Language:** Python 3.8+
 
@@ -104,7 +104,7 @@ python src/main.py
 
 ---
 
-## 5. 📊 Results and Discussion
+## 5.  Results and Discussion
 
 | Metric | Score |
 |--------|-------|
@@ -122,13 +122,13 @@ python src/main.py
 **Sample Output:**
 ```
 Patient Data: Glucose=148, BMI=33.6, Age=50
-Prediction: HIGH SUGAR LEVEL ⚠️
+Prediction: HIGH SUGAR LEVEL 
 Alert sent: "Warning! High blood sugar detected. Please consult a doctor."
 ```
 
 ---
 
-## 6. ⚠️ Limitations
+## 6. Limitations
 
 - The model is trained only on the **Pima Indians Diabetes Dataset**, which is limited to female patients aged 21+. It may not generalize well to diverse populations.
 - The system does **not use real-time continuous glucose monitor (CGM)** data — it relies on manual input.
@@ -139,7 +139,7 @@ Alert sent: "Warning! High blood sugar detected. Please consult a doctor."
 
 ---
 
-## 7. 🚀 Future Scope
+## 7.  Future Scope
 
 - Integrate with **real-time wearable sensors** (smartwatch / CGM devices) for continuous monitoring
 - Develop a **mobile application** (Android/iOS) with real-time dashboard
@@ -151,13 +151,13 @@ Alert sent: "Warning! High blood sugar detected. Please consult a doctor."
 
 ---
 
-## 8. ✅ Conclusion
+## 8.  Conclusion
 
 This project successfully demonstrates an AI-powered Sugar Level Notification System using machine learning classification. The Random Forest model achieves ~79% accuracy on the Pima Indians Diabetes Dataset and correctly triggers notifications for abnormal sugar levels. The system provides a low-cost, non-invasive alternative to frequent blood tests for preliminary diabetes screening. While the model has limitations in dataset diversity and real-time monitoring, it serves as a strong foundation for a more comprehensive healthcare AI solution. This project helps beginner AI/ML students understand supervised learning, classification algorithms, data preprocessing, and practical application integration.
 
 ---
 
-## 9. 📎 References
+## 9.  References
 
 ```
 [1] WHO, "Diabetes Fact Sheet," World Health Organization, 2023. 
