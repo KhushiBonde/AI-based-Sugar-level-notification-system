@@ -1,11 +1,3 @@
-#  AI Based Sugar Level Notification System
-
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![Scikit-learn](https://img.shields.io/badge/ML-Scikit--learn-orange.svg)
-![Level](https://img.shields.io/badge/Level-Beginner-green.svg)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
-
----
 
 ## Profile
 
